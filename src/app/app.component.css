@@ -1,0 +1,6 @@
+.main-content{
+    min-height: calc(100vh-180px);
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}

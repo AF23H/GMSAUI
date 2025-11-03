@@ -1,0 +1,147 @@
+/* .navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid;
+  position: relative;
+  flex-wrap: wrap;
+}
+.logo-area{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  flex-wrap: 0;
+}
+.logo-placeholder{
+ width: 48px;
+  height: 48px;
+  background: #1976d2;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; 
+  border-radius: 8px;
+}
+.site-name{
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: darkcyan;
+}
+.space{
+  justify-content: space-between;
+  color: #999;
+  margin: 0 10px;
+  font-weight: 300;
+}
+.login-btn{
+  color: #1976d2;
+  border-color: #1976d2;
+}
+.login-btn mat-icon {
+  margin-right: 6px;
+} */
+
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap;          /* ✅ Allows wrapping on small screens */
+  gap: 10px;                /* Gap when wrapped */
+}
+
+/* Logo + Name */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.logo-placeholder {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  border-radius: 8px;
+}
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.site-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: darkcyan;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;   /* ✅ If space is less, links move to next line */
+}
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+.nav-links a.active {
+  color: #1976d2;
+}
+
+/* Login Button */
+.login-area .login-btn {
+  color: #1976d2;
+  border: 1px solid #1976d2;
+  padding: 6px 14px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.login-btn mat-icon {
+  margin-right: 6px;
+}
+
+/* 📍 MEDIA QUERIES FOR RESPONSIVENESS */
+@media (max-width: 992px) {
+  .site-name {
+    font-size: 1.4rem;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-area {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;      /* ✅ Center the links on small screens */
+  }
+
+  .login-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;      /* Login button center on small screens */
+  }
+}
